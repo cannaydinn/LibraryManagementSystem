@@ -1,0 +1,20 @@
+﻿@model BookDetailsViewModel
+<div class="d-flex justify-content-center align-items-center mt-5">
+    <div class="card" style="width: 500px">
+        <div class="card-header">
+            <b>Book Details</b>
+        </div>
+        <div class="card-body">
+            <p><b>Title:</b> @Model.Title</p>
+            <p><b>Author ID:</b> @Model.AuthorId</p>
+            <p><b>Genre:</b> @Model.Genre</p>
+            <p><b>Publish Date:</b> @Model.PublishDate.ToShortDateString()</p>
+            <p><b>ISBN:</b> @Model.Isbn</p>
+            <p><b>Copies Available:</b> @Model.CopiesAvailable</p>
+        </div>
+        
+            <a class="btn btn-primary" asp-action="List">Back to Book List</a>
+       
+        
+    </div>
+</div>

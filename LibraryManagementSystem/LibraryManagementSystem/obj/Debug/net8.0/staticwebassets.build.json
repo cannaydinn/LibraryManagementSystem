@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "5mYLvUo+w+th4bABjiJwcvWBwfx8Bcbp7AYej9CaW04=",
+  "Source": "LibraryManagementSystem",
+  "BasePath": "_content/LibraryManagementSystem",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "LibraryManagementSystem\\wwwroot",
+      "Source": "LibraryManagementSystem",
+      "ContentRoot": "C:\\Users\\Can\\Desktop\\Full-Stack_WebDevelopment\\LibraryManagementSystem\\LibraryManagementSystem\\wwwroot\\",
+      "BasePath": "_content/LibraryManagementSystem",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Can\\Desktop\\Full-Stack_WebDevelopment\\LibraryManagementSystem\\LibraryManagementSystem\\wwwroot\\css\\style.css",
+      "SourceId": "LibraryManagementSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Can\\Desktop\\Full-Stack_WebDevelopment\\LibraryManagementSystem\\LibraryManagementSystem\\wwwroot\\",
+      "BasePath": "_content/LibraryManagementSystem",
+      "RelativePath": "css/style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\style.css"
+    }
+  ]
+}

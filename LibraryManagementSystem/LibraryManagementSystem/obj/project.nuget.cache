@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "dgArTkD2e1E=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Can\\Desktop\\Full-Stack_WebDevelopment\\LibraryManagementSystem\\LibraryManagementSystem\\LibraryManagementSystem.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Can\\.nuget\\packages\\microsoft.aspnetcore.dataprotection.abstractions\\8.0.8\\microsoft.aspnetcore.dataprotection.abstractions.8.0.8.nupkg.sha512"
+  ],
+  "logs": []
+}

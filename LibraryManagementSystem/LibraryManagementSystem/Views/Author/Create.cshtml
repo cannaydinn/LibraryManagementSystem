@@ -1,0 +1,24 @@
+﻿@model AuthorCreateViewModel
+
+<div class="card mt-5">
+    <p class="text-center fw-bold fs-3">Create Author</p>
+    <form asp-controller="Author" asp-action="Create" method="post">
+        <div class="form-group">
+            <label>First Name</label>
+            <input asp-for="FirstName" type="text" class="form-control"/>
+            <span asp-validation-for="FirstName" class="text-danger mt-2 fw-bold"></span>
+        </div>
+        <div class="form-group mt-2">
+            <label>Last Name</label>
+            <input asp-for="LastName" type="text" class="form-control"/>
+            <span asp-validation-for="LastName" class="text-danger mt-2 fw-bold"></span>
+        </div>
+        <div class="form-group mt-2">
+            <label>Date of Birth</label>
+            <input asp-for="DateOfBirth" type="text" class="form-control"/>
+            <span asp-validation-for="DateOfBirth" class="text-danger mt-2 fw-bold"></span>
+        </div>
+        <button type="submit" class="btn mt-1 btn-dark login-btn">Create</button>
+
+    </form>
+</div>

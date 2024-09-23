@@ -1,0 +1,9 @@
+﻿
+
+<div class="d-flex justify-content-center align-items-center mt-5">
+    <div class="card" style="width: 500px">
+        <p class="fw-bold">Full Name:</p>@User.Claims.FirstOrDefault(x => x.Type == "fullName")?.Value
+        <p class="fw-bold">Email:</p>@User.Claims.FirstOrDefault(x => x.Type == "email")?.Value
+        <p class="fw-bold">Phone Number: </p>@User.Claims.FirstOrDefault(x => x.Type == "phoneNumber")?.Value
+    </div>
+</div>

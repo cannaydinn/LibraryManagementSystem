@@ -1,0 +1,27 @@
+﻿
+.card {
+    padding: 50px;
+    border: 2px solid;
+}
+
+.first-card {
+    border-radius: 15px 0 0 15px;
+}
+
+
+.second-card {
+    border-radius: 0 15px 15px 0;
+}
+
+.login-title {
+    margin-top: 50px;
+    font-size: 30px
+}
+
+.signUp-card{
+    border-radius:15px;
+}
+
+body {
+    background: #F8EDE3;
+}

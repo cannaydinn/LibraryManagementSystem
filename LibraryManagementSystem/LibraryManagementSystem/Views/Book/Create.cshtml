@@ -1,0 +1,42 @@
+﻿@model BookCreateViewModel
+
+<div class="card mt-5">
+    <p class="text-center fw-bold fs-3">Create Book</p>
+    <form asp-controller="Book" asp-action="Create" method="post">
+        <div class="form-group">
+            <label>Book Name</label>
+            <input asp-for="Title" type="text" class="form-control" />
+            <span asp-validation-for="Title" class="text-danger mt-2 fw-bold"></span>
+        </div>
+        <div>
+            <label>Kitabın Yazarı</label>
+            <select asp-for="AuthorId" asp-items="@(    new SelectList(ViewBag.Owners, "Id", "FullName")     )" class="form-control">
+                <option selected disabled>Seçiniz</option>
+
+            </select>
+            <span asp-validation-for="AuthorId" class="text-danger mt-2 fw-bold"></span>
+        </div>
+        <div class="form-group mt-2">
+            <label>Genre</label>
+            <input asp-for="Genre" type="text" class="form-control" />
+            <span asp-validation-for="Genre" class="text-danger mt-2 fw-bold"></span>
+        </div>
+        <div class="form-group mt-2">
+            <label>Publish Date</label>
+            <input asp-for="PublishDate" type="text" class="form-control" />
+            <span asp-validation-for="PublishDate" class="text-danger mt-2 fw-bold"></span>
+        </div>
+        <div class="form-group mt-2">
+            <label>ISBN</label>
+            <input asp-for="Isbn" type="text" class="form-control" />
+            <span asp-validation-for="Isbn" class="text-danger mt-2 fw-bold"></span>
+        </div>
+        <div class="form-group mt-2">
+            <label>Copies Available</label>
+            <input asp-for="CopiesAvailable" type="text" class="form-control" />
+            <span asp-validation-for="CopiesAvailable" class="text-danger mt-2 fw-bold"></span>
+        </div>
+        <button type="submit" class="btn mt-1 btn-dark login-btn">Create</button>
+
+    </form>
+</div>

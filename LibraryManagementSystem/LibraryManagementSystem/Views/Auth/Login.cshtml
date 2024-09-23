@@ -1,0 +1,42 @@
+﻿@model LoginViewModel
+
+<p class="text-center fw-bold login-title">Welcome to the Library Management System</p>
+
+@if (TempData["SignUpSuccess"] != null)
+{
+    <div class="alert alert-success text-center">
+        @TempData["SignUpSuccess"]
+    </div>
+}
+
+<div class="d-flex justify-content-center align-items-center" style="height:auto">
+    
+    <div class="card first-card" style="height: 500px">
+        <p class="text-center fw-bold fs-3">LOGIN</p>
+        <form asp-controller="Auth" asp-action="Login" method="post">
+            <div class="form-group">
+                <label>Email</label>
+                <input asp-for="Email" type="email" class="form-control"/>
+                <span asp-validation-for="Email" class="text-danger fw-bold mt-1"></span>
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input asp-for="Password" type="password" class="form-control"/>
+                <span asp-validation-for="Password" class="text-danger fw-bold mt-1"></span>
+            </div>
+            @if (ViewBag.Error != null)
+            {
+                <div class="text-danger fw-bold">@ViewBag.Error</div>
+            }
+            <button type="submit" class="btn mt-1 btn-dark login-btn">Login</button>
+        </form>
+
+    </div>
+    <div class="card second-card d-flex justify-content-center align-items-center" style="height:500px">
+        <p>Don't have an account? Sign up</p>
+        <a href="/Auth/SignUp" class="btn btn-dark login-btn">Sign Up</a>
+    </div>
+</div>
+
+
+

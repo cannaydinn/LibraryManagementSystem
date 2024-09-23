@@ -1,0 +1,23 @@
+﻿<div class="mt-5">
+    <a class="btn btn-outline-dark" asp-controller="Author" asp-action="Create">Create Author</a>
+    <p class="h3 mt-3">AUTHOR LIST</p>
+    <div class="row">
+        @foreach (var author in Model)
+        {
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-header">
+                        <b>AUTHOR: </b>@author.FirstName @author.LastName
+                    </div>
+                    <div class="card-body">
+                        <p><b>Date Of Birth: </b>@author.DateOfBirth</p>
+                        <a asp-controller="Author" asp-action="Details" asp-route-id="@author.Id" class="btn btn-outline-dark">Details</a>
+                        <a asp-controller="Author" asp-action="Edit" asp-route-id="@author.Id" class="btn btn-outline-dark">Edit</a>
+                        <a asp-controller="Author" asp-action="Delete" asp-route-id="@author.Id" class="btn btn-outline-dark">Delete</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+</div>
